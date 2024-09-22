@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TTTXtreme-android</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="sign_in_with_apple">Sign in with Apple</string>
+</resources>

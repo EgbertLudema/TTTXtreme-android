@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "675783272470",
+    "project_id": "tttxtreme-android",
+    "storage_bucket": "tttxtreme-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675783272470:android:b678073923543c1f22ad37",
+        "android_client_info": {
+          "package_name": "com.example.tttxtreme_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675783272470-7iojsimo1nhv8q1g5r3ub5ces9dfps3q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tttxtreme_android",
+            "certificate_hash": "132cedb254873760c0c943479bee3835e6be1286"
+          }
+        },
+        {
+          "client_id": "675783272470-v8ounbsrtu5100t6pcrkp0g4ktbnlsop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIc96qRRnzftZzyS_nhdS_s-wq8p9VM_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675783272470-v8ounbsrtu5100t6pcrkp0g4ktbnlsop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
