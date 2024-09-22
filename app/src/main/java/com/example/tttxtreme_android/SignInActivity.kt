@@ -36,7 +36,7 @@ class SignInActivity : AppCompatActivity() {
         val currentUser = auth.currentUser
         if (currentUser != null) {
             // User already signed in, navigate to MainActivity
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, UserLandingActivity::class.java))
             finish() // Finish this activity
         }
 

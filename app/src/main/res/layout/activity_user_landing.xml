@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".UserLandingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="15mm"
+            android:paddingVertical="12dp"
+            android:src="@drawable/tttxtreme_logo_x"
+            android:layout_marginVertical="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/light_blue">
+
+                <Button
+                    android:id="@+id/btnLocalCasual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Casual"
+                    android:background="@drawable/main_btn" />
+
+                <Button
+                    android:id="@+id/btnLocalExtreme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Extreme"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/main_btn" />
+
+                <Button
+                    android:id="@+id/btnLocalOnly3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Only 3"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/main_btn" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>
