@@ -5,24 +5,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:gravity="center"
     android:background="@color/light_blue"
     tools:context=".LandingActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="16dp">
+        android:layout_margin="16dp"
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="15mm"
+            android:layout_height="17mm"
             android:paddingVertical="12dp"
             android:src="@drawable/tttxtreme_logo_x"
-            android:layout_marginVertical="20dp"/>
+            android:layout_marginVertical="6mm"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -39,34 +39,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp">
+                    android:paddingVertical="30dp">
 
                     <Button
                         android:id="@+id/btnGuest"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Play as guest"
                         android:background="@drawable/main_btn"
-                        />
+                        android:text="Play as guest" />
 
                     <Button
                         android:id="@+id/btnLogin"
-                        android:layout_marginTop="20dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Login"
+                        android:layout_marginTop="30dp"
                         android:background="@drawable/main_btn"
-                        />
+                        android:text="Login" />
 
                     <Button
                         android:id="@+id/btnRegister"
-                        android:layout_marginTop="20dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Register"
+                        android:layout_marginTop="30dp"
                         android:background="@drawable/main_btn"
-                        />
+                        android:text="Register" />
 
                 </LinearLayout>
 
@@ -74,9 +70,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="10dp">
-                    <include
-                        layout="@layout/or_login_with"
-                        />
+
+                    <include layout="@layout/or_login_with" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
