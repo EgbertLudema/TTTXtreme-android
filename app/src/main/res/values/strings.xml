@@ -5,6 +5,19 @@
     <string name="sign_in_with_google">Sign in with Google</string>
     <string name="sign_in_with_facebook">Sign in with Facebook</string>
     <string name="sign_in_with_apple">Sign in with Apple</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="facebook_app_id">935878685240181</string>
+    <string name="fb_login_protocol_scheme">fb935878685240181</string>
+    <string name="play">Play</string>
+    <string name="scoreboard">Scoreboard</string>
+    <string name="friends">Friends</string>
+    <string name="profile">Profile</string>
+    <string name="casual">Casual</string>
+    <string name="extreme">Extreme</string>
+    <string name="only_3">Only 3</string>
+    <string name="tttxtreme_logo_description">TTTXtreme logo</string>
 </resources>

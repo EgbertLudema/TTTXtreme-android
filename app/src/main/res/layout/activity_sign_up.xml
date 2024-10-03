@@ -5,126 +5,123 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:gravity="center"
     android:background="@color/light_blue"
     tools:context=".SignUpActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_margin="16dp">
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="30dp">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="17mm"
-            android:paddingVertical="12dp"
+            android:paddingVertical="10dp"
             android:src="@drawable/tttxtreme_logo_x"
-            android:layout_marginVertical="6mm"/>
+            android:layout_marginTop="20dp"/>
 
-        <androidx.cardview.widget.CardView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="10dp">
-            <LinearLayout
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center_horizontal"
-                android:paddingTop="24dp"
-                android:paddingRight="24dp"
-                android:paddingLeft="24dp"
-                android:paddingBottom="10dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Register"
-                    android:id="@+id/signupText"
-                    android:textAllCaps="true"
-                    android:textSize="28sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textColor="@color/blue"/>
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:id="@+id/username"
-                    android:background="@drawable/form_input"
-                    android:layout_marginTop="20dp"
-                    android:padding="8dp"
-                    android:hint="Username"
-                    android:drawableLeft="@drawable/baseline_person_24"
-                    android:textColor="@color/black"
-                    android:drawablePadding="8dp"/>
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:id="@+id/email"
-                    android:background="@drawable/form_input"
-                    android:layout_marginTop="20dp"
-                    android:padding="8dp"
-                    android:hint="E-mail"
-                    android:drawableLeft="@drawable/baseline_email_24"
-                    android:textColor="@color/black"
-                    android:drawablePadding="8dp"/>
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:id="@+id/password"
-                    android:background="@drawable/form_input"
-                    android:layout_marginTop="20dp"
-                    android:inputType="textPassword"
-                    android:padding="8dp"
-                    android:hint="Password"
-                    android:drawableLeft="@drawable/baseline_lock_24"
-                    android:textColor="@color/black"
-                    android:drawablePadding="8dp"/>
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:id="@+id/confirmPassword"
-                    android:background="@drawable/form_input"
-                    android:layout_marginTop="20dp"
-                    android:inputType="textPassword"
-                    android:padding="8dp"
-                    android:hint="Confirm password"
-                    android:drawableLeft="@drawable/baseline_lock_24"
-                    android:textColor="@color/black"
-                    android:drawablePadding="8dp"/>
-                <Button
-                    android:layout_marginTop="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Sign up"
-                    android:background="@drawable/main_btn"
-                    />
-
+                app:cardCornerRadius="10dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp">
-                    <include
-                        layout="@layout/or_login_with"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:gravity="center">
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="24dp"
+                    android:paddingRight="24dp"
+                    android:paddingLeft="24dp"
+                    android:paddingBottom="10dp">
                     <TextView
-                        android:id="@+id/text_login"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@android:color/black"
-                        android:text="Already a account? Login!"
-                        android:textSize="14sp"
-                        android:autoLink="none"/>
+                        android:text="@string/register"
+                        android:id="@+id/signupText"
+                        android:textAllCaps="true"
+                        android:textSize="28sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue"/>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/username"
+                        android:background="@drawable/form_input"
+                        android:layout_marginTop="20dp"
+                        android:padding="8dp"
+                        android:hint="@string/username"
+                        android:drawableLeft="@drawable/baseline_person_24"
+                        android:textColor="@color/black"
+                        android:drawablePadding="8dp"/>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/email"
+                        android:background="@drawable/form_input"
+                        android:layout_marginTop="20dp"
+                        android:padding="8dp"
+                        android:hint="@string/email"
+                        android:drawableLeft="@drawable/baseline_email_24"
+                        android:textColor="@color/black"
+                        android:drawablePadding="8dp"/>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/password"
+                        android:background="@drawable/form_input"
+                        android:layout_marginTop="20dp"
+                        android:inputType="textPassword"
+                        android:padding="8dp"
+                        android:hint="@string/password"
+                        android:drawableLeft="@drawable/baseline_lock_24"
+                        android:textColor="@color/black"
+                        android:drawablePadding="8dp"/>
+                    <Button
+                        android:id="@+id/register_button"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register"
+                        android:background="@drawable/main_btn"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp">
+                        <include
+                            layout="@layout/or_login_with"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/text_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:text="Already a account? Login!"
+                            android:textSize="14sp"
+                            android:autoLink="none"/>
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

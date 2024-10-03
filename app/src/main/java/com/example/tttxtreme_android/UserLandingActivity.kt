@@ -1,37 +1,45 @@
 package com.example.tttxtreme_android
 
-import android.content.Intent
 import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import android.widget.Button
+import androidx.fragment.app.Fragment
+import com.example.tttxtreme_android.databinding.ActivityUserLandingBinding
 
 class UserLandingActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityUserLandingBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_user_landing)
+        enableEdgeToEdge()
 
-        // Access the buttons using their IDs
-        val btnLocalCasual = findViewById<Button>(R.id.btnLocalCasual)
-        val btnLocalExtreme = findViewById<Button>(R.id.btnLocalExtreme)
-        val btnLocalOnly3 = findViewById<Button>(R.id.btnLocalOnly3)
+        // Initialize the binding
+        binding = ActivityUserLandingBinding.inflate(layoutInflater)
 
-        // Set click listeners for each button
-        btnLocalCasual.setOnClickListener {
-            // Start the LocalCasualActivity
-            val intent = Intent(this, LocalCasualActivity::class.java)
-            startActivity(intent)
+        // Set the content view using binding
+        setContentView(binding.root)
+
+        // Start with the PlayFragment
+        replaceFragment(PlayFragment())
+
+        // Set up the BottomNavigationView listener
+        binding.bottomNavigationView.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.play -> replaceFragment(PlayFragment())
+                R.id.scoreboard-> replaceFragment(ScoreboardFragment())
+                R.id.friends -> replaceFragment(FriendsFragment())
+                R.id.profile -> replaceFragment(ProfileFragment())
+                else -> {}
+            }
+            true
         }
+    }
 
-        btnLocalExtreme.setOnClickListener {
-            // Start the LocalExtremeActivity
-            val intent = Intent(this, LocalExtremeActivity::class.java)
-            startActivity(intent)
-        }
-
-        btnLocalOnly3.setOnClickListener {
-            // Start the LocalOnly3Activity
-            val intent = Intent(this, LocalOnly3Activity::class.java)
-            startActivity(intent)
-        }
+    private fun replaceFragment(fragment: Fragment) {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.user_landing_frame_layout, fragment)
+        fragmentTransaction.commit()
     }
 }
