@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".PlayFragment">
+    tools:context=".PlayFragment"
+    android:padding="16dp">
 
     <ImageView
         android:layout_width="match_parent"
@@ -31,8 +32,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/light_blue"
                 android:orientation="vertical"
-                android:paddingHorizontal="10dp"
-                android:paddingVertical="30dp">
+                android:padding="30dp">
 
                 <Button
                     android:id="@+id/btnLocalCasual"

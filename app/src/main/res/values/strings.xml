@@ -20,4 +20,5 @@
     <string name="extreme">Extreme</string>
     <string name="only_3">Only 3</string>
     <string name="tttxtreme_logo_description">TTTXtreme logo</string>
+    <string name="logout">Logout</string>
 </resources>
