@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--  TODO: Style all items  -->
     <item
         android:id="@+id/play"
         android:icon="@drawable/round_play_arrow_60"
