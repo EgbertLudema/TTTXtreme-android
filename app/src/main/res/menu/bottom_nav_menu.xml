@@ -1,20 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<!--  TODO: Style all items  -->
     <item
         android:id="@+id/play"
         android:icon="@drawable/round_play_arrow_60"
-        android:title="@string/play" />
+        android:title="@string/play"/>
+
     <item
         android:id="@+id/scoreboard"
-        android:title="@string/scoreboard"
-        android:icon="@drawable/round_leaderboard_60" />
+        android:icon="@drawable/round_leaderboard_60"
+        android:title="@string/scoreboard"/>
+
     <item
         android:id="@+id/friends"
-        android:title="@string/friends"
-        android:icon="@drawable/baseline_person_add_60"/>
+        android:icon="@drawable/baseline_person_add_alt_1_24"
+        android:title="@string/friends"/>
+
     <item
         android:id="@+id/profile"
-        android:title="@string/profile"
-        android:icon="@drawable/baseline_person_add_60"/>
+        android:icon="@drawable/baseline_person_24"
+        android:title="@string/profile"/>
 </menu>
