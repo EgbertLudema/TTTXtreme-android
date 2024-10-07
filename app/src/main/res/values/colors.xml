@@ -5,6 +5,8 @@
     <color name="light_gray">#C3C3C3</color>
     <color name="blue">#63C6F7</color>
     <color name="light_blue">#B1E3F8</color>
+    <color name="dark_blue">#6A8598</color>
+    <color name="dark_blue_shade">#597082</color>
     <color name="red">#FF5959</color>
     <color name="light_red">#FFACA9</color>
 </resources>
