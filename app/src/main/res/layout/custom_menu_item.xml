@@ -1,14 +1,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:paddingVertical="8dp"
     android:orientation="vertical"
     android:gravity="center">
 
     <!-- Custom background with shadow -->
     <FrameLayout
+        android:id="@+id/customFrameLayout"
         android:layout_width="50dp"
         android:layout_height="54dp"
-        android:background="@drawable/nav_item_background">
+        android:background="@drawable/nav_item_default_background">
 
         <!-- Icon in the middle of the square -->
         <ImageView
@@ -26,7 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Label"
-        android:textColor="@color/white"
-        android:textSize="8sp"
-        android:gravity="center" />
+        android:textColor="@color/dark_blue_shade"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:fontFamily="@font/rexlia_rg"/>
 </LinearLayout>
